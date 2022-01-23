@@ -1,1 +1,1 @@
-# 100-days-of-projects
+# 100-days-of-project
