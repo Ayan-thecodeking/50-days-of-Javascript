@@ -38,6 +38,8 @@
         .upload{
             padding-top: 22px;
         }
+
+        
     </style>
 </head>
 
@@ -47,8 +49,11 @@
         <h1>My PhotoGallary</h1>
         <br />
 
-        <div class="thumbnails">
-            <img onmouseover="preview.src=img1.src" name="img1" src="imgs/img1.jpg">
+        <div class="thumbnails" id="imgPreview">
+            <img onmouseover="preview.src=img.src" name="img" src="" class="ipi" alt="imgPreview">
+            <img onmouseover="preview.src=img0.src" name="img0" src="" class="ipi" alt="imgPreview">
+            <img onmouseover="preview.src=img00.src" name="img00" src="" class="ipi" alt="imgPreview">
+            <img onmouseover="preview.src=img1.src" name="img1" src="imgs/img1.jpg" >
             <img onmouseover="preview.src=img2.src" name="img2" src="imgs/img2.jpg">
             <img onmouseover="preview.src=img3.src" name="img3" src="imgs/img3.jpg">
             <img onmouseover="preview.src=img4.src" name="img4" src="imgs/img4.jpg">
@@ -60,14 +65,37 @@
 
         <div class="upload">
             <p>Click on the "Choose File" button to upload a image:</p>
-            <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
+            <form class="form" action="/action_page.php">
+                <input type="file" id="filename" name="filename">
                 <input type="submit">
             </form>
         </div>
 
     </div>
+       <script>
+        const filename = document.getElementById("filename"); 
+        const previewContainer = document.getElementById("imgPreview");
+        const previewImage = previewContainer.querySelector(".ipi");
+ 
+         filename.addEventListener("change",function(){
+            // var i =0;
+            // for( i ;i<5;i++){
+           const file = this.files[0];
+            
+           if(file){
+        const reader = new FileReader();
+        previewImage.style.display="block";
 
+        reader.addEventListener("load",function(){
+            console.log(this);
+           previewImage.setAttribute("src",this.result);
+        });
+ 
+        reader.readAsDataURL(file);
+        // }
+    }
+         })
+       </script>
 </body>
 
 </html>
