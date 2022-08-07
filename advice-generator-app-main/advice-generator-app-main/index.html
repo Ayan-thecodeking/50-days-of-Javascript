@@ -4,69 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.jss">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Advice generator app</title>
+  <title>Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-
-      background: hsl(218, 23%, 16%);
-    }
-
-    .advice {
-      width: 550px;
-      /* border: 2px solid red; */
-      border-radius: 15px;
-      /* background: hsl(217, 19%, 38%); */
-      padding: 30px 30px 25px;
-      font-weight: bold;
-      background: hsl(217, 19%, 24%);
-      font-size: 28px;
-      color: hsl(193, 38%, 86%);
-      box-shadow: 0 0 5px rgb(83, 82, 82);
-    }
-
-
-    .advice header {
-      font-size: 15px;
-      text-align: center;
-      color: hsl(150, 100%, 66%);
-      margin: 6px 6px 26px;
-    }
-
-    .advice p {
-      text-align: center;
-    }
-
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    svg {
-      margin-top: 40px;
-      margin-left: 90px;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
+    
   </style>
 </head>
 
@@ -74,38 +23,53 @@
 
 
 
-  <div class="container">
     <div class="advice">
-      <header>Advice #
+      <header class="id">Advice #
         <!-- Advice ID goes here -->
         "
         <!-- Advice text goes here -->"</h1>
       </header>
-      <i class="fas fa-quote-left"></i>
-      <P class=" quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eaque cupiditate accusamus
-        reprehenderit.</P>
-      <i class="fas fa-quote-right"></i>
+      
+      
+        <p class="quote">&ldquo; Proper quotes with HTML entities... &rdquo;</p>
 
-
-      <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fill-rule="evenodd">
-          <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
-          <g transform="translate(138)" fill="#CEE3E9">
-            <rect width="6" height="16" rx="3" />
-            <rect x="14" width="6" height="16" rx="3" />
+      <div class="line">
+        <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+            <g transform="translate(138)" fill="#CEE3E9">
+              <rect width="6" height="16" rx="3" />
+              <rect x="14" width="6" height="16" rx="3" />
+            </g>
           </g>
-        </g>
-      </svg>
+        </svg>
 
+      </div>
+
+      <div class="buttons">
+        <div class="features">
+          <ul>
+            <li class="sound"><i class="fa fa-volume-up"></i></li>
+            <li class="sound"><i class="fa fa-copy"></i></li>
+            <li class="sound"><i class="fa fa-twitter"></i></li>
+          </ul>
+          <button>Change</button>
+        </div>
+      </div>
 
     </div>
-  </div>
+     
+
+   
 
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
-  </div>
+    Coded by <a href="#">Ayan Gupta</a>.
+    </div>
+  
+<script src="script.js"></script>
+
 </body>
 
 </html>
