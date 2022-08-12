@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #fb7413;
+    --color-white: #ffffff;
+    --color-medium-grey: #7c8798;
+    --color-dark-blue: #252d37;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +16,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: hsl(216, 12%, 8%);
-}
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+    background: hsl(216, 12%, 8%);  }
 
 .star {
     height: 40px;
@@ -98,7 +107,7 @@ body {
     background: hsl(25, 97%, 53%);
 }
 
-.buttons .submit {
+.buttons .submitRate {
     margin: 25px 0px;
     width: 400px;
     border-radius: 15px;
@@ -107,25 +116,68 @@ body {
     border: 2px solid hsl(25, 97%, 53%);
     background: hsl(25, 97%, 53%); 
 }
-.buttons .submit:hover{
+.buttons .submitRate:hover{
     color: hsl(220, 13%, 86%);
     background: hsl(216, 12%, 8%); 
     
 }
 
-.attribution {
-    font-size: 18px;
-    text-align: center;
-    /* border: 2px solid red; */
-    position: absolute;
-    bottom: 5px;
-}
-
-attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+.thank-you__title {
+    font-size: 30px;
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  
+  .thank-you__description {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--color-medium-grey);
+      line-height: 1.6;
+      margin-bottom: 15px;
+  }
+  
+  .thank-you {
+      text-align: center;
+      width: 450px;
+      background-color: var(--color-dark-blue);
+      border-radius: 15px;
+      padding: 15px 15px;
+      
+    }
+    
+    .thank-you .thank-you-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    
+    .thank-you .result {
+      display: inline-block;
+      background-color: var(--color-dark-blue);
+      padding: 5px 15px;
+      border-radius: 20px;
+      color: var(--color-primary);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  
+    .attribution {
+      font-size: 18px;
+      text-align: center;
+      /* border: 2px solid red; */
+      position: absolute;
+      bottom: 5px;
+  }
+    
+  
+  attribution {
+      font-size: 11px;
+      text-align: center;
+  }
+  
+  .attribution a {
+      color: hsl(228, 45%, 44%);
+  }
