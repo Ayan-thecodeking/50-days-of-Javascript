@@ -1,0 +1,39 @@
+
+body {
+    background-image: url("");
+    background-size: cover;
+    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(121, 179, 137);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* .container{
+    margin: auto;
+    width: 40%;
+    height: 300px;
+    border: 3px solid rgb(13, 17, 13);
+    padding: 10px;
+    margin-top: 120px;
+    background: rgb(40, 107, 55);
+} */
+h1 {
+    color: goldenrod;
+    font-size: 50px;
+}
+
+#message-el {
+    
+    font-size: 30px;
+}
+button{
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
