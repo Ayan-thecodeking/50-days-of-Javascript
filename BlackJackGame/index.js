@@ -77,5 +77,7 @@ function newCard() {
         cards.push(card)
 
         renderGame();
+    }else{
+        renderGame()
     }
 }
