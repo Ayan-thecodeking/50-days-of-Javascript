@@ -1,10 +1,31 @@
+html{
+    --bg: #575757;
+    --bg-panel: #ffffff;/*box container*/
+    --color-headings: #000000;/*heading*/
+    --color-text: #393e46;/*paragraph*/
+    height:100%;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+  }
+  /* dark theme colors */
+  html[data-theme='dark']{
+    --bg: #232931;
+    --bg-panel: #1F2937;
+    --color-headings: #ffffff;
+    --color-text: #273549;
+  }
+
+
 body {
     background-image: url("");
     background-size: cover;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
-    background-color: #1C1C1C;
+    background-color: var(--bg);
 }
 
 .container {
@@ -13,20 +34,19 @@ body {
     display: inline-flexbox;
     justify-content: center;
     margin: auto;
-    width: 40%;
-    height: 400px;
+    width: 30vw;
+    height: 600px;
     /* border: 3px solid rgb(13, 17, 13); */
     border-radius: 5px;
      padding: 20px;
-    margin-top: 120px; 
-    background: #1F2937;
-}
+    margin-top: 80px; 
+    background-color: var(--bg-panel);}
 
 
 
 
 div h1 {
-    color: #FFFFFF;
+    color: var(--color-headings);
     text-align: left;
     overflow-wrap: break-word;
     inline-size: 300px;
@@ -38,7 +58,7 @@ div h1 span {
 }
 
 div p {
-    color: #FFFFFF;
+    color: var(--color-headings);
     font-weight: lighter;
     text-align: left;
     margin: 40px;
@@ -79,7 +99,57 @@ div .pass1{
      width: 200px;
      display: inline-block;
     text-align: center;
-     background: #273549;
+     background: var(--color-text);
      padding: 4px;
      border-radius: 5px;
      }
+     
+    
+      form{  
+        margin-top: 0.7rem;
+      }
+      /* checkbox toggler */
+      input[type=checkbox]{
+          height: 0;
+        width: 0;
+          visibility: hidden;
+      }
+      label {
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 52px;
+          height: 27px;
+          background: grey;
+          float: left;
+          border-radius: 100px;
+          position: relative;
+      }
+      label:after {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border-radius: 90px;
+          transition: 0.3s;
+      }
+      input:checked + label {
+          background: #00ADB5;
+      }
+      input:checked + label:after {
+          left: calc(100% - 5px);
+          transform: translateX(-100%);
+      }
+      label:active:after {
+          width: 45px;
+      }
+      /* transition */
+      html.transition,
+      html.transition *,
+      html.transition *:before,
+      html.transition *:after {
+        transition: all 750ms !important;
+        transition-delay: 0 !important;
+      }
