@@ -8,8 +8,12 @@ function gen(){
         let randomIndex = Math.floor( Math.random() * characters.length)
         password +=characters[randomIndex]
         document.getElementById("passOne").innerText =password
+        
     }
-   
+    
+
+    
+    
     // console.log( "ans " + password)
 }
 

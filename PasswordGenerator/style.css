@@ -78,7 +78,7 @@ div button {
 
 div button:hover {
     color: #000;
-    background: white;
+     background: var(--color-text);
 }
 
 div hr {
