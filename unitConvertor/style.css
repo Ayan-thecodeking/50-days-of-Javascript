@@ -1,6 +1,6 @@
 body {
-    background-image: url("bg.jpg");
-    background-size: cover;
+    /* background-image: url("bg.jpg"); */
+    /* background-size: cover; */
     font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -13,8 +13,8 @@ body {
     width: 40%;
     /* border: 3px solid rgb(13, 17, 13); */
     background: #F4F4F4;
-    margin-top: 120px;
-    height: 600px;
+    margin-top: 60px;
+    height: 700px;
    
 }
  .box1{
