@@ -1,1 +1,3 @@
-# 100-days-of-project
+# 50-days-of-javascript
+
+
