@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #b262e4;
+}
+
+.main-heading h2 {
+
+    margin-bottom: 20px;
+}
+
+img{
+    width: 200px
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    transition: 400ms;
+    text-decoration: none;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    z-index: 100000;
+}

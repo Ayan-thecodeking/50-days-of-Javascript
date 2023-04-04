@@ -10,7 +10,7 @@ radioInputs.forEach((input) => {
   });
 });
 
-features.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (!ratingValue) return;
   renderThankyouContent(ratingCard, ratingValue);

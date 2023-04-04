@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+
+    <style>
+        body{
+            background: rebeccapurple;
+            text-align: center;
+
+        }
+
+        .container{
+            background: #000;
+            color: aliceblue;
+            margin: auto;
+            width: 300px;
+            height: 200px;
+            padding-top: 60px;
+            margin-top: 120px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="one" id="para1" > my name is ayan</p>
+        <p class="one" id="para2"> aanya is pgli</p>
+        <p id="ans"></p>
+        <button id="btn"> start </button>
+        
+    </div>
+    <script>
+        const magic = document.getElementById("para1")
+        const result = document.getElementById("para2")
+
+        const butn = document.getElementById("btn")
+         const answer = document.getElementById("ans");
+         let num =0;
+
+        butn.addEventListener(
+            'click', () =>{
+                magic.innerHTML = "ayan is awesome "
+                result.innerHTML ="wastage of water "
+                setInterval(() =>{
+               answer.innerHTML = `${num}`
+               num++;
+                },1000)
+            }
+        )
+    </script>
+</body>
+</html>

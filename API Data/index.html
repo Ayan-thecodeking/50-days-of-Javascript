@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+
+<body>
+    <p>try this hack time</p>
+    <button onclick="myFunction()">click</button>
+    <p id="demo"></p>
+    <p id="time"></p>
+    <script>
+        function myFunction() {
+
+            var curt = new Date().toLocaleDateString();
+            // var t = curt.setHours(5)
+
+            document.getElementById("demo").innerHTML = curt;
+
+
+            (function () {
+                setInterval(() => {
+                    var d = new Date().toLocaleTimeString();
+                    document.getElementById("time").innerHTML = d;
+                }, 1000)
+
+            })();
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

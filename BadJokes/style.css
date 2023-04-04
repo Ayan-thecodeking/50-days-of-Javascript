@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+/* margin-top: 50px;     */
+background: rgb(182, 195, 196);
+}
+.container{
+    /* margin: auto; */
+    margin: 200px auto 0 auto;
+    border-radius: 30px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    background: #91c5c5;
+}
+.joke{
+    border: 2px solid red;
+    height: fit-content;
+    /* margin: auto; */
+    width: fit-content;
+    font-size: large;
+    /* margin: 40px; */
+    margin: 40px auto 40px auto;
+}
+.btn{
+    width: 80px;
+    padding: 6px;
+    margin-top: 16px;
+}
+.btn:hover{
+    background: #09334d;
+    color: white;
+}
