@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5ed0cc;
+}
+
+.counterContainer {
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.numCounter {
+    font-size: 24px;
+    /* Adjust as necessary */
+    font-weight: bold;
+    margin-top: 10px;
+    /* Adjust as necessary */
+}
+
+span {
+    margin-top: 35px;
+
+}
