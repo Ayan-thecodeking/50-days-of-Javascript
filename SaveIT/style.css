@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background: green;
+  padding: 10px;
+}
+
+.heading h1 {
+  padding-left: 10px;
+}
+
+h1 i {
+  padding-right: 8px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 35px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  text-decoration: none;
+  padding: 0;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+button.learn-more .circle {
+  background: #f4ec04;
+  border-radius: 1.625rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0;
+  display: block;
+  position: relative;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+button.learn-more .circle .icon{
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background: white;
+}
+
+button.learn-more .circle .icon.arrow::before{
+position: absolute;
+content: "";
+top: -0.25rem;
+right: 0.0625rem;
+width: 0.625rem;
+border-top: 0.125rem sold white;
+border-right: 0.125rem sold white;
+transform: rotate(45deg);
+
+
+}
+button.learn-more .button-text{
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;right: 0;left: 0;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
